@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping website</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
   
-    <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-    <div>
-        <ul id="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="Register.html">Register</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="Message-sending.html" target="_blank">Message sending</a></li>
-        </ul>
-    </div>
-    
-    </section>
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
-    
+        <div>
+    <ul id="navbar" class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+        <li><a href="Message-sending.html">Message-sending</a></li>
+
+        <a href="#" id="close"><i class="fas fa-times "></i></a>
+
+    </ul>
+</div>
+
+<div class="mobile">
+  <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+
+    <section class="shopimage">
+      <a href="addslider.html" target="_blank"><button class="button4">Add image</button></a>
+     <br><br>
+      <a href="#" ><button class="button5">Delete image</button></a>
+  
+    </section>
 
     <section id="shop">
       
-      <a href="addslider.html" target="_blank"><button class="button2">Add image</button></a>
-     
-          <a href="#" ><button class="button3">Delete image</button></a>
-      
+
      
       <div class="slideshow-container">
         <div class="slides_shop"></div>
@@ -67,64 +80,51 @@
   </div>
 
     </section>
-
+    
 
     
 
-
-<section id="image-slider">
-
-  <a href="addbanner.html" target="_blank"><button class="button4">Add image</button></a>
-     
+<section class="banner">
+  <div>
+    <a href="addbanner.html" target="_blank"><button class="button4">Add image</button></a>
+  </div>
+  <br>
+  <div>
   <a href="#" ><button class="button5">Delete image</button></a>
-    
-    <!--image slider start-->
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="mywebsite_img/sale offer/offer4.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="mywebsite_img/sale offer/offer5.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="mywebsite_img/sale offer/offer1.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="mywebsite_img/sale offer/offer4.jpg" alt="">
-          </div>
-          
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-      </div>
-      <!--image slider end-->
-      
+</div>
+
 </section>
 
+    <section class="bannerslider">
+      <div class="slider">
+        <div class="slide active">
+          <img src="mywebsite_img/sale offer/offer4.jpg" alt="">
+           </div>
+        <div class="slide">
+          <img src="mywebsite_img/sale offer/offer1.jpg" alt="">
+          </div>
+        <div class="slide">
+          <img src="mywebsite_img/sale offer/offer5.jpg" alt="">
+           </div>
+        <div class="slide">
+          <img src="mywebsite_img/sale offer/offer4.jpg" alt="">
+            </div>
+                <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <!-- <div class="slide-icon"></div> -->
+        </div>
+      </div>
+  
+      
+    </section>
+   
 
 
 

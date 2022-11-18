@@ -1,3 +1,29 @@
+//for navigation bar
+const bar = document.getElementById('bar');
+const nav = document.getElementById('navbar');
+const close = document.getElementById('close');
+if(bar)
+{
+bar.addEventListener('click', ()=> {
+    nav.classList.add('active');
+    // document.getElementById("mobile").style.display = "none";
+})
+}
+
+if(close)
+{
+close.addEventListener('click', ()=> {
+    nav.classList.remove('active');
+    // document.getElementById("mobile").style.display = "flex";
+
+})
+}
+
+
+
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {

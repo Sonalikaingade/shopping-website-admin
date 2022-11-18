@@ -7,23 +7,35 @@
     <title>Message sending</title>
     <link rel="stylesheet" href="message.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <section id="header">
         <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-    <div>
-        <ul id="navbar">
-            <li><a  href="index.html">Home</a></li>
+    
+            <div>
+        <ul id="navbar" class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="Register.html">Register</a></li>
             <li><a href="admin.html">Admin</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
-            <li><a class="active" href="Message-sending.html" >Message sending</a></li>
+            <li><a class="active" href="Message-sending.html">Message-sending</a></li>
+
+            <a href="#" id="close"><i class="fas fa-times "></i></a>
+    
         </ul>
     </div>
     
+    <div class="mobile">
+      <i id="bar" class="fas fa-bars"></i>
+    </div>
+    
     </section>
+  
     <form action="">
     <div class="backg">
     <section class="braoadcast">
@@ -76,9 +88,39 @@
         <div>
             <input type="submit" value="Send" id="send">
         </div>
+    </section>
+
+    <section class="birth-message before one week">
+        <div>
+            <label for="bday">Its about a week for your birthday!</label>
+        </div>
+        <br>
+
+        <div>
+            <textarea rows="10" cols="50" placeholder="Enter the message"></textarea>
+        </div>
+       <br>
+       <span >Send a image</span>
+       <div id="upload">
+         
+        <i class="material-icons" style="font-size:25px"></i>
+           
+         <input type="file" id="myFile" name="filename">
+       </div>
+       
+     
+            
+           
+     <br>
+
+        <div>
+            <input type="submit" value="Send" id="send">
+        </div>
+    </section>
     </form>  
     </div>
-    </section>
+    
+    <script src="script.js"></script>
 
 
 

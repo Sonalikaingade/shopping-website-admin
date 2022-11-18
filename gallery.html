@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 
 
     <section id="header">
         <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-    <div>
-        <ul id="navbar">
-            <li><a  href="index.html">Home</a></li>
+    
+            <div>
+        <ul id="navbar" class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li><a class="active" href="gallery.html">Gallery</a></li>
             <li><a href="Register.html">Register</a></li>
             <li><a href="admin.html">Admin</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="Message-sending.html">Message sending</a></li>
+            <li><a href="Message-sending.html">Message-sending</a></li>
+
+            <a href="#" id="close"><i class="fas fa-times "></i></a>
+    
         </ul>
     </div>
     
+    <div class="mobile">
+      <i id="bar" class="fas fa-bars"></i>
+    </div>
+    
     </section>
-
+    
    
 
 
@@ -158,40 +168,6 @@
 
 
 
-<section class="gallery">
-    <ul>
-        <li class="list active1" data-filter="all">All</li>
-        <li class="list" data-filter="men">Men</li>
-        <li class="list" data-filter="women">Women</li>
-        <li class="list" data-filter="kids">Kids</li>
-    </ul>
-
-
-    <div class="product">
-        <div class="itembox" data-item="men"><img src="mywebsite_img/gallery/men/m1.jpg"></div>
-        <div class="itembox" data-item="women"><img src="mywebsite_img/gallery/women/w1.jpg"></div>
-        <div class="itembox" data-item="kids"><img src="mywebsite_img/gallery/kids/k1.jpg"></div>
-
-
-        <div class="itembox" data-item="men"><img src="mywebsite_img/gallery/men/m2.jpg"></div>
-        <div class="itembox" data-item="women"><img src="mywebsite_img/gallery/women/w2.jpg"></div>
-        <div class="itembox" data-item="kids"><img src="mywebsite_img/gallery/kids/k2.jpg"></div>
-
-
-        <div class="itembox" data-item="men"><img src="mywebsite_img/gallery/men/m3.jpg"></div>
-        <div class="itembox" data-item="women"><img src="mywebsite_img/gallery/women/w3.jpg"></div>
-        <div class="itembox" data-item="kids"><img src="mywebsite_img/gallery/kids/k3.jpg"></div>
-
-
-        <div class="itembox" data-item="men"><img src="mywebsite_img/gallery/men/m4.jpg"></div>
-        <div class="itembox" data-item="women"><img src="mywebsite_img/gallery/women/w4.jpg"></div>
-        <div class="itembox" data-item="kids"><img src="mywebsite_img/gallery/kids/k4.jpg"></div>
-
-        <div class="itembox" data-item="men"><img src="mywebsite_img/gallery/men/m5.jpg"></div>
-        <div class="itembox" data-item="women"><img src="mywebsite_img/gallery/women/w5.jpg"></div>
-        <div class="itembox" data-item="kids"><img src="mywebsite_img/gallery/kids/k5.jpg"></div>
-    </div>
-  </section>
 
  
   <script>

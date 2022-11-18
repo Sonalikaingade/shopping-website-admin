@@ -6,27 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     
 </head>
 <body>
 
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
-    <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-    <div>
-        <ul id="navbar">
-            <li><a  href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a  href="Register.html">Register</a></li>
-            <li><a class="active" href="admin.html">Admin</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="Message-sending.html">Message sending</a></li>
-        </ul>
-    </div>
-    
-    </section>
-    <section class="admin">
+        <div>
+    <ul id="navbar" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a class="active" href="admin.html">Admin</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+        <li><a href="Message-sending.html">Message-sending</a></li>
+
+        <a href="#" id="close"><i class="fas fa-times "></i></a>
+
+    </ul>
+</div>
+
+<div class="mobile">
+  <i id="bar" class="fas fa-bars"></i>
+</div>
+
+</section>
+
+        <section class="admin">
 
       <div class="admin-container">
         <header>Admin Login</header>
@@ -49,7 +60,8 @@
            </div>
         </form>
         
- 
+        <script src="script.js"></script>
+
     
 </body>
 </html>
